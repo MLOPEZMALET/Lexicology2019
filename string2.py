@@ -32,11 +32,17 @@ def verbing(s):
 # Return the resulting string.
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
+import string
+
 def not_bad(s):
-  if s.find("not") != -1 and s.find("bad") != -1:
-    a=s.find("not")
-    s=s.replace(s[a:], "good")
-  return s
+ if s.find("not") != -1 and s.find("bad") != -1:
+     if s[-1] not in string.punctuation:
+         a=s.find("not")
+         return s.replace(s[a:], "good")
+     else:
+        a=s.find("not")
+        return s.replace(s[a:-1], "good")
+
 
 
 
