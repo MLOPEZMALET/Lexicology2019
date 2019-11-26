@@ -44,7 +44,7 @@ def main():
                         M[a,b]+=1
                         #ici, la matrice évolue et se remplit
 
-print(M.max()) #ici, la matrice est vide!
+        print(M.max()) #ici, la matrice est vide!
 
 ### vérifiez si l'indice i ne dépasse dans aucun sens la liste words
 ### vérifiez si le mot de contexte n'est égal au mot lui-même
